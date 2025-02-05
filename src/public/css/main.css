@@ -327,7 +327,8 @@ section{
     flex-wrap: wrap;
     background-size: contain;
     height: 100%;
-    padding: 0;
+    padding: 0 0 25px 0;
+
 }
 
 .portafolios .tarjetas .tarjeta {
@@ -343,6 +344,7 @@ section{
     margin: 1.5rem;
     text-align: center;
     transition: .2s linear;
+    cursor: pointer;
 }
 
 .portafolios .tarjetas .tarjeta img {
@@ -357,6 +359,7 @@ section{
     margin-left: -30rem;
     opacity: 0;
 }
+
 
 .portafolios .tarjetas .tarjeta:hover img {
     transform: scale(1.1);
@@ -373,6 +376,7 @@ section{
     transition: all ease .5s;
     font-size: 3rem;
 }
+
 
 .portafolios .slider {
     display: flex;
@@ -639,4 +643,38 @@ input::placeholder, textarea::placeholder {
 
 #volver-inicio:hover {
     background-color: #35666d; /* Efecto hover */
+}
+
+
+.trabajos{ 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all ease .7s;
+}
+
+.trabajos.visible {
+    opacity: 1;
+    max-height: 700px; /* Ajusta este valor según el contenido */
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+.trabajos .trabajo {
+    display: flex;
+    height: 500px;
+    width: 24%;
+    border-radius: 15px;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }

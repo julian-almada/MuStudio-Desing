@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MuStudio Desing</title>
-    <link rel="icon" href="/images/MUgrnade.jpg" type="image/png">
+    <link rel="icon" href="/images/MUchiquito2.png" type="image/png">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -117,11 +117,36 @@
     <section class="portafolios" id="portafolios">
         <h1 class="titulo-portafolios">Conoce nuestro trabajo.</h1>
         <div class="tarjetas">  
-            <div class="tarjeta"><a href=""><img src="/images/Kitchen.jpeg" alt=""></a><h2>Cocinas</h2></div>
-            <div class="tarjeta"><a href=""><img src="/images/descarga5.jpeg" alt=""></a><h2>Dormitorios</h2></div>
-            <div class="tarjeta"><a href=""><img src="/images/baño.jpeg" alt=""></a><h2>Baños</h2></div>
-            <div class="tarjeta"><a href=""><img src="/images/Living.jpeg" alt=""></a><h2>Livings</h2></div>
+            <div class="tarjeta" id="tarjeta1"><img src="/images/Kitchen.jpeg" alt=""><h2>Cocinas</h2></div>
+            <div class="tarjeta" id="tarjeta2"><img src="/images/descarga5.jpeg" alt=""><h2>Dormitorios</h2></div>
+            <div class="tarjeta" id="tarjeta3"><img src="/images/baño.jpeg" alt=""><h2>Baños</h2></div>
+            <div class="tarjeta" id="tarjeta4"><img src="/images/Living.jpeg" alt=""><h2>Livings</h2></div>
         </div>
+        <div class="trabajos" id="trabajos1">
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/chino.jpeg');"><p>descripcion del trabajo1</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/cosa.jpeg');"><p>descripcion del trabajo1</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga.jpeg');"><p>descripcion del trabajo1</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga1.jpeg');"><p>descripcion del trabajo1</p></div>
+        </div>
+        <div class="trabajos" id="trabajos2">
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga6.jpeg');"><p>descripcion del trabajo2</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga5.jpeg');"><p>descripcion del trabajo2</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga4.jpeg');"><p>descripcion del trabajo2</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/cama.jpeg');"><p>descripcion del trabajo2</p></div>
+        </div>
+        <div class="trabajos" id="trabajos3">
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/02.jpeg');"><p>descripcion del trabajo3</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/03.jpeg');"><p>descripcion del trabajo3</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/baño.jpeg');"><p>descripcion del trabajo3</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/01.jpeg');"><p>descripcion del trabajo3</p></div>
+        </div>
+        <div class="trabajos" id="trabajos4">
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/07.jpeg');"><p>descripcion del trabajo4</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/09.jpeg');"><p>descripcion del trabajo4</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga8.jpeg');"><p>descripcion del trabajo4</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/wall.jpeg');"><p>descripcion del trabajo4</p></div>
+        </div>
+
         <h1 class="titulo-portafolios" style="margin-top: 3rem;">Nuestras ultimas novedades</h1>
         <div class="slider">
             <div class="tarjeta-slider" id="tarjeta-slider1" style="background-image: url('/images/01.jpeg');"><h2>Botiquín de baño con colgador para toalla</h2></div>
@@ -211,6 +236,31 @@ function volverAlInicio() {
         behavior: "smooth"
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const tarjetas = document.querySelectorAll('[id^="tarjeta"]');
+
+  tarjetas.forEach(tarjeta => {
+    tarjeta.addEventListener('click', function() {
+      let idTarjeta = tarjeta.id; 
+      let numero = idTarjeta.replace('tarjeta', '');
+      let idTrabajos = 'trabajos' + numero;
+      let divTrabajos = document.getElementById(idTrabajos);
+
+      // Ocultar los demás divs
+      document.querySelectorAll('[id^="trabajos"]').forEach(div => {
+        if(div.id !== idTrabajos) {
+          div.classList.remove('visible');
+        }
+      });
+
+      // Alternar la clase 'visible' para mostrar/ocultar con transición
+      if(divTrabajos) {
+        divTrabajos.classList.toggle('visible');
+      }
+    });
+  });
+});
 
     
 </script>
