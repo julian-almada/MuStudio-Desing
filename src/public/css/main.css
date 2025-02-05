@@ -1,0 +1,642 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #aaaaaa;
+    padding: 0 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #ffffff10;
+    backdrop-filter: blur(8px);
+}
+
+
+
+header .imagen_header {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    align-items: center;
+    background: url(../images/MUchiquito.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+header .navbar {
+    display: flex;
+}
+ header .navbar a {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: black;
+    transition: all .3s linear;
+ }
+
+ header .navbar a:hover {
+    transform: scale(1.1);
+ }
+
+section{
+    min-height: 80vh;
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.inicio {
+    padding-top: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.icon {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+
+}
+
+#icon_fondo {
+    width: 80%;
+    position: relative;
+    opacity: 0.7;
+    background-size: cover;
+}
+
+#texto {
+    width: 90%;
+    position: relative;
+    margin: 0;
+    z-index: 10;
+}
+
+.texto {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.texto h1 {
+    font-size: 130px;
+}
+
+.texto h2 {
+    font-size: 90px;
+}
+
+.inicio .banner .texto {
+   padding-left: 5rem;
+}
+
+.inicio .descripcion-inicio {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicio .descripcion-inicio h2 {
+    font-size: 25px;
+}
+
+.inicio .descripcion-inicio p {
+    font-size: 20px;
+}
+
+.acerca_de {
+    padding-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.acerca_de .grande {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.acerca_de .grande .banner .icon {
+    height: 40%;
+    margin-top: 20rem;
+}
+
+.acerca_de .grande .banner .icon #icon_fondo {
+    margin-top: -110rem;
+}
+
+.acerca_de .grande .banner .texto {
+    display: flex;
+    width: 70%;
+    position: relative;
+    padding-bottom: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.acerca_de .grande .banner .texto h2 {
+    font-size: 100px;
+}
+
+
+
+.parallax-cards {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre tarjetas */
+    align-items: center;
+    gap: 2rem; /* Espaciado entre tarjetas */
+    padding: 1.5rem 0; /* Margen superior e inferior */
+
+}
+
+/* Cada tarjeta individual */
+.card {
+    position: relative;
+    width: 30%; /* Cada tarjeta ocupa el 30% del ancho */
+    height: 300px;
+    overflow: hidden; /* Para que las imágenes no sobresalgan */
+    border-radius: 10px;
+    background-color: #ffffff10; /* Fondo translúcido */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    position: relative; /* Para posicionar la imagen y el texto */
+    overflow: hidden;   /* Asegura que el contenido no sobresalga */
+    height: 300px;      /* Altura fija para el efecto parallax */
+}
+
+.card .fondo-chiquito {
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    margin-top: -18rem;
+}
+
+.card .fondo-chiquito .icon_fondo {
+    opacity: .7;
+}
+
+.card .texto-chiquito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 8%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.card .texto-chiquito h3 {
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.card .texto-chiquito p {
+    display: flex;
+    font-size: 21px;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    
+}
+
+.desc h3 {
+    font-size: 35px;
+}
+
+.desc p {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.about .about-card {
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    border-radius: 15px;
+    width: 48%;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.about .about-card h2 {
+    font-size: 25px;
+}
+
+.about .about-card p {
+    font-size: 20px;
+}
+
+.portafolios    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9rem;
+}
+
+.portafolios .titulo-portafolios {
+    color: whitesmoke;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.portafolios .tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: contain;
+    height: 100%;
+    padding: 0;
+}
+
+.portafolios .tarjetas .tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    overflow: hidden;
+    max-height: 200px;
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.portafolios .tarjetas .tarjeta img {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.portafolios .tarjetas .tarjeta h2 {
+    display: flex;
+    position: absolute;
+    margin-left: -30rem;
+    opacity: 0;
+}
+
+.portafolios .tarjetas .tarjeta:hover img {
+    transform: scale(1.1);
+    transition: all ease .5s;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff10;
+    opacity: .7;
+}
+
+.portafolios .tarjetas .tarjeta:hover h2 {
+    color: #eee7e7;
+    margin: 0;
+    opacity: 1;
+    transition: all ease .5s;
+    font-size: 3rem;
+}
+
+.portafolios .slider {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    padding: auto;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.portafolios .slider .tarjeta-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 0;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: .7;
+    transition: all ease .5s;
+} 
+
+.portafolios .slider .tarjeta-slider h2{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease .5s;
+    bottom: -4rem;
+}
+
+.portafolios .slider .tarjeta-slider:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    transform: scaleY(1.1);
+    border-radius: 15px;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.portafolios .slider .tarjeta-slider:hover h2 {
+    opacity: 1;
+    bottom: 5rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: #eee7e7;
+    background: rgba(143, 140, 140, 0.384);
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding-top: 9rem;
+}
+
+.contacto h1 {
+    color: #eee7e7;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+.contenedor-contacto {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contacto form {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.contacto form .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+}
+
+.contacto form .input-group label {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: .2rem;
+}
+
+.contacto form .input-group input, textarea{
+    padding: 17px 25px;
+    border-radius: 5px;
+    background-color: #cecccc;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    outline: none;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.contacto form .input-group textarea{
+    min-height: 15rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #cecccc;
+}
+
+.contacto form .input-group .boton-enviar {
+    display: flex;
+    position: relative;
+    font-size: 23px;
+    background-color: #ffffff10;
+    width: 30%;
+    align-self: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.contacto form .input-group .boton-enviar:hover {
+    transform: scale(1.1);
+    background-color: #cecccc;
+}
+
+.barra-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.barra-contacto p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.redes a {
+    display: flex;
+    color: black;
+    font-size: 25px;
+    padding: 20px 0;
+    align-items: center;
+    transition: all ease .5s;
+}
+
+.redes a ion-icon {
+    font-size: 40px;
+    transition: all ease .5s;
+}
+
+.redes a:hover {
+    transform: scale(1.1);
+}
+
+.redes #red1:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes #red1:hover ion-icon {
+    color: #aaaaaa;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.redes #red2:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #16c958, #128C7E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes #red2:hover ion-icon {
+    color: #aaaaaa;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.redes #red3:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #D14836, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes #red3:hover ion-icon {
+    color: #aaaaaa;
+    background: linear-gradient(45deg, #D14836, #FF5722);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1px 6px 0 6px;
+    background-color: #a5b9cc; /* Color similar al de WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 35px;
+    display: none; /* Por defecto está oculto */
+    
+}
+
+#volver-inicio ion-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+
+#volver-inicio:hover {
+    background-color: #35666d; /* Efecto hover */
+}
