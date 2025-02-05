@@ -117,16 +117,28 @@
     <section class="portafolios" id="portafolios">
         <h1 class="titulo-portafolios">Conoce nuestro trabajo.</h1>
         <div class="tarjetas">  
-            <div class="tarjeta" id="tarjeta1"><img src="/images/Kitchen.jpeg" alt=""><h2>Cocinas</h2></div>
-            <div class="tarjeta" id="tarjeta2"><img src="/images/descarga5.jpeg" alt=""><h2>Dormitorios</h2></div>
-            <div class="tarjeta" id="tarjeta3"><img src="/images/baño.jpeg" alt=""><h2>Baños</h2></div>
-            <div class="tarjeta" id="tarjeta4"><img src="/images/Living.jpeg" alt=""><h2>Livings</h2></div>
+            <div class="tarjeta" id="tarjeta1"><img src="/images/Kitchen.jpeg" alt=""><h2>Cocinas</h2><span>ver más</span><p>Diseños personalizados para tu cocina.</p></div>
+            <div class="tarjeta" id="tarjeta2"><img src="/images/descarga5.jpeg" alt=""><h2>Dormitorios</h2><span>ver más</span><p>Optimización del espacio en tu habitación.</p></div>
+            <div class="tarjeta" id="tarjeta3"><img src="/images/baño.jpeg" alt=""><h2>Baños</h2><span>ver más</span><p>Soluciones elegantes y funcionales.</p></div>
+            <div class="tarjeta" id="tarjeta4"><img src="/images/Living.jpeg" alt=""><h2>Livings</h2><span>ver más</span><p>Decoración y confort para tu sala.</p></div>
         </div>
         <div class="trabajos" id="trabajos1">
-            <div class="trabajo" id="trabajo" style="background-image: url('/images/chino.jpeg');"><p>descripcion del trabajo1</p></div>
-            <div class="trabajo" id="trabajo" style="background-image: url('/images/cosa.jpeg');"><p>descripcion del trabajo1</p></div>
-            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga.jpeg');"><p>descripcion del trabajo1</p></div>
-            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga1.jpeg');"><p>descripcion del trabajo1</p></div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/chino.jpeg');">
+                    <p>Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?</p>
+                    <button class="cerrar">X</button>
+            </div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/cosa.jpeg');">
+                <p>Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?</p>
+                    <button class="cerrar">X</button>
+            </div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga.jpeg');">
+                <p>Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?</p>
+                <button class="cerrar">X</button>
+            </div>
+            <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga1.jpeg');">
+                <p>Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?</p>
+                <button class="cerrar">X</button>
+            </div>
         </div>
         <div class="trabajos" id="trabajos2">
             <div class="trabajo" id="trabajo" style="background-image: url('/images/descarga6.jpeg');"><p>descripcion del trabajo2</p></div>
@@ -260,6 +272,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+});
+
+document.querySelectorAll('.trabajo').forEach(trabajo => {
+    trabajo.addEventListener('click', function () {
+        if (this.classList.contains('expandido')) {
+            this.classList.remove('expandido'); // Si ya está expandido, se cierra
+        } else {
+            document.querySelectorAll('.trabajo').forEach(t => t.classList.remove('expandido')); // Cierra otros
+            this.classList.add('expandido'); // Expande el seleccionado
+        }
+    });
 });
 
     
