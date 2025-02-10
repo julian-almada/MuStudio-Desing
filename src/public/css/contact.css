@@ -1,0 +1,160 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.contacto h1 {
+    color: #eee7e7;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+.contenedor-contacto {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contacto form {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.contacto form .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+}
+
+.contacto form .input-group label {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: .2rem;
+}
+
+.contacto form .input-group input, textarea{
+    padding: 17px 25px;
+    border-radius: 5px;
+    background-color: #cecccc;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    outline: none;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.contacto form .input-group textarea{
+    min-height: 15rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #cecccc;
+}
+
+.contacto form .input-group .boton-enviar {
+    display: flex;
+    position: relative;
+    font-size: 23px;
+    background-color: #ffffff10;
+    width: 30%;
+    align-self: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.contacto form .input-group .boton-enviar:hover {
+    transform: scale(1.1);
+    background-color: #cecccc;
+}
+
+.barra-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.barra-contacto p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.redes a {
+    display: flex;
+    color: black;
+    font-size: 25px;
+    padding: 20px 0;
+    align-items: center;
+    transition: all ease .5s;
+}
+
+.redes a ion-icon {
+    font-size: 40px;
+    transition: all ease .5s;
+}
+
+.redes a:hover {
+    transform: scale(1.1);
+}
+
+.redes #red1:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes #red1:hover ion-icon {
+    color: #aaaaaa;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.redes #red2:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #16c958, #128C7E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes #red2:hover ion-icon {
+    color: #aaaaaa;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.redes #red3:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #D14836, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes #red3:hover ion-icon {
+    color: #aaaaaa;
+    background: linear-gradient(45deg, #D14836, #FF5722);
+    padding: 5px;
+    border-radius: 10px;
+}

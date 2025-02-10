@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #ffffff10;
+    backdrop-filter: blur(8px);
+}
+
+
+
+header .imagen_header {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    align-items: center;
+    background: url(../images/MUchiquito.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+header .navbar {
+    display: flex;
+}
+ header .navbar a {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: black;
+    transition: all .3s linear;
+ }
+
+ header .navbar a:hover {
+    transform: scale(1.1);
+ }

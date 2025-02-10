@@ -1,0 +1,255 @@
+.portafolios    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9rem;
+}
+
+.portafolios .titulo-portafolios {
+    color: whitesmoke;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.portafolios .tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: contain;
+    height: 100%;
+    padding: 0 0 25px 0;
+
+}
+
+.portafolios .tarjetas .tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    overflow: hidden;
+    max-height: 200px;
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    text-align: center;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.portafolios .tarjetas .tarjeta img {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.portafolios .tarjetas .tarjeta h2 {
+    display: flex;
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: -30rem;
+    opacity: 0;
+}
+
+.portafolios .tarjetas .tarjeta p {
+    display: flex;
+    position: absolute;
+    margin-right: -20rem;
+    margin-top: 5rem;
+    font-size: 20px;
+    opacity: 0;
+    max-width: 350px;
+}
+
+.portafolios .tarjetas .tarjeta:hover p {
+    margin-left: -20rem;
+    opacity: 1;
+    transition: all ease .5s;
+    color: #ebe6e6;
+}
+
+.portafolios .tarjetas span {
+    display: flex;
+    position: absolute;
+    margin-bottom: -20rem;
+    font-size: 20px;
+    opacity: 0;
+    max-width: 350px;
+}
+
+.portafolios .tarjetas .tarjeta:hover span {
+    margin-bottom: -16rem;
+    opacity: 1;
+    transition: all ease .5s;
+    color: #ebe6e6;
+}
+
+
+.portafolios .tarjetas .tarjeta:hover img {
+    transform: scale(1.1);
+    transition: all ease .5s;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff10;
+    opacity: .7;
+}
+
+.portafolios .tarjetas .tarjeta:hover h2 {
+    color: #eee7e7;
+    margin: 0;
+    opacity: 1;
+    transition: all ease .5s;
+    font-size: 3rem;
+    margin-top: -5rem;
+}
+
+
+.portafolios .slider {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    padding: auto;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.portafolios .slider .tarjeta-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 0;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: .7;
+    transition: all ease .5s;
+} 
+
+.portafolios .slider .tarjeta-slider h2{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease .5s;
+    bottom: -4rem;
+}
+
+.portafolios .slider .tarjeta-slider:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    transform: scaleY(1.1);
+    border-radius: 15px;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.portafolios .slider .tarjeta-slider:hover h2 {
+    opacity: 1;
+    bottom: 5rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: #eee7e7;
+    background: rgba(143, 140, 140, 0.384);
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.trabajos{ 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all ease .7s;
+}
+
+.trabajos.visible {
+    opacity: 1;
+    max-height: 700px; /* Ajusta este valor según el contenido */
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+.trabajos .trabajo {
+    display: flex;
+    height: 500px;
+    width: 24%;
+    border-radius: 15px;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Oculta el contenido extra */
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.trabajo {
+    width: 100%; /* O el tamaño deseado */
+    aspect-ratio: 16/9; /* Mantiene la proporción de la imagen */
+    background-size: contain; /* Ajusta la imagen sin recortar */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+}
+
+.trabajo p {
+    display: none; /* Ocultar descripción por defecto */
+}
+
+.trabajo.expandido {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw; /* Ocupar casi toda la pantalla */
+    height: 90vh;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(8px);
+    background-size: contain;
+    background-position: center;
+}
+
+.trabajo.expandido p {
+    display: block; /* Mostrar descripción cuando se expande */
+}
+
+.trabajo .contenido {
+    display: none; /* Oculta el contenido inicialmente */
+}
+
+.trabajo.expandido p {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}

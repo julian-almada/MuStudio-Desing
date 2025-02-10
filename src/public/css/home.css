@@ -1,0 +1,81 @@
+.inicio {
+    padding-top: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.icon {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+
+}
+
+#icon_fondo {
+    width: 80%;
+    position: relative;
+    opacity: 0.7;
+    background-size: cover;
+}
+
+#texto {
+    width: 90%;
+    position: relative;
+    margin: 0;
+    z-index: 10;
+}
+
+.texto {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.texto h1 {
+    font-size: 130px;
+}
+
+.texto h2 {
+    font-size: 90px;
+}
+
+.inicio .banner .texto {
+   padding-left: 5rem;
+}
+
+.inicio .descripcion-inicio {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicio .descripcion-inicio h2 {
+    font-size: 25px;
+}
+
+.inicio .descripcion-inicio p {
+    font-size: 20px;
+}
