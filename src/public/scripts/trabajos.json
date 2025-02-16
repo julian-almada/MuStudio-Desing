@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "imagen": "/images/chino.jpeg",
+      "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+      "titulo": "Trabajo 1",
+      "categoria": "cocina"
+    },
+    {
+        "id": 2,
+        "imagen": "/images/cosa.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "cocina"
+    },
+    {
+        "id": 3,
+        "imagen": "/images/descarga.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "cocina"
+    },
+    {
+        "id": 4,
+        "imagen": "/images/descarga1.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "cocina"
+    },
+    {
+        "id": 5,
+        "imagen": "/images/descarga6.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "dormitorio"
+    },
+    {
+        "id": 6,
+        "imagen": "/images/descarga5.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "dormitorio"
+    },
+    {
+        "id": 7,
+        "imagen": "/images/descarga4.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "dormitorio"
+    },
+    {
+        "id": 8,
+        "imagen": "/images/cama.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "dormitorio"
+    },
+    {
+        "id": 9,
+        "imagen": "/images/02.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "baño"
+    },
+    {
+        "id": 10,
+        "imagen": "/images/03.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "baño"
+    },
+    {
+        "id": 11,
+        "imagen": "/images/baño.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "baño"
+    },
+    {
+        "id": 12,
+        "imagen": "/images/01.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "baño"
+    },
+    {
+        "id": 13,
+        "imagen": "/images/07.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "living"
+    },
+    {
+        "id": 14,
+        "imagen": "/images/09.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "living"
+    },
+    {
+        "id": 15,
+        "imagen": "/images/descarga8.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "living"
+    },
+    {
+        "id": 16,
+        "imagen": "/images/wall.jpeg",
+        "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
+        "titulo": "TRABAJO",
+        "categoria": "living"
+    }
+
+  ]

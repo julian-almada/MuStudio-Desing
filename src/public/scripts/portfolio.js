@@ -1,59 +1,48 @@
-const contenedorProductos = document.querySelector("#contenedor-productos");
-const botonesCategorias = document.querySelectorAll(".boton-categoria");
-const botonTodos = document.querySelector("#todos");
-const titulo = document.querySelector('#titulo-principal');
-let botonesAgregar = document.querySelectorAll('.boton-agregar');
-const numerito = document.querySelector('#numerito');
+document.addEventListener("DOMContentLoaded", () => {
+  const contenedorTrabajos = document.querySelector("#contenedor-trabajos");
+  const botonesVerMas = document.querySelectorAll(".ver-mas");
 
-let productos = [];
+  let trabajos = [];
 
-fetch("scripts/productos.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data;
-        cargarProductos(productos);
-    })
+  // Cargar el JSON
+  fetch("scripts/trabajos.json")
+      .then(response => response.json())
+      .then(data => {
+          trabajos = data;
+      })
+      .catch(error => console.error("Error cargando JSON:", error));
 
+  function cargarTrabajos(trabajosElegidos) {
+      contenedorTrabajos.innerHTML = ""; // Limpiar contenedor antes de cargar nuevos trabajos
 
+      trabajosElegidos.forEach(trabajo => {
+          const div = document.createElement("div");
+          div.classList.add("trabajos-de-categoria");
+          div.innerHTML = `
+              <div class="trabajo-imagen"><img src="${trabajo.imagen}" alt="${trabajo.titulo}"></div>
+              <h2 class="nombre-trabajo">${trabajo.titulo}</h2>
+              <p class="descripcion-producto">${trabajo.descripcion}</p>
+              <button class="ver-trabajo">Ver Trabajo</button>
+              <button class="boton-cerrar">X</button>
+          `;
 
-function cargarProductos(productosElegidos) {
-
-  contenedorProductos.innerHTML = "";
-
-  productosElegidos.forEach(producto => {
-    
-    const div = document.createElement("div");
-    div.classList.add("producto-producto");
-    div.innerHTML = `
-        
-          <div class="producto-imagen"><img src="${producto.imagen}" alt="${producto.titulo}"></div>
-          <h2 class="nombre-producto">${producto.titulo}</h2>
-          <h3 class="precio-producto">$ ${producto.precio}</h3>
-        <div class="botones">
-        <button class="boton-ver" data-id="${producto.id}">Ver</button>
-        
-
-        `;
-
-        const botonVer = div.querySelector(".boton-ver");
-        botonVer.addEventListener("click", mostrarDetalleProducto);
-
-    contenedorProductos.append(div);
-  });
-
-  actualizarBotonesAgregar();
-}
-
-function mostrarDetalleProducto(event) {
-  const productoId = event.target.dataset.id;
-  const producto = productos.find(p => p.id === productoId);
-
-  if (producto) {
-    const urlDetalleProducto = `detalle_producto?id=${productoId}`;
-    window.location.href = urlDetalleProducto;
-  } else {
-    alert("El producto no pudo ser encontrado.");
+          contenedorTrabajos.appendChild(div);
+      });
   }
-}
 
+  // Agregar evento a cada botón "Ver más"
+  botonesVerMas.forEach(boton => {
+      boton.addEventListener("click", (e) => {
+          const tarjeta = e.target.closest(".tarjeta"); // Encuentra la tarjeta más cercana
+          if (!tarjeta) return;
 
+          const categoria = tarjeta.dataset.categoria; // Obtiene la categoría de la tarjeta
+          console.log("Categoría seleccionada:", categoria); // Debug
+
+          const trabajosFiltrados = trabajos.filter(trabajo => trabajo.categoria === categoria);
+          console.log("Trabajos filtrados:", trabajosFiltrados); // Debug
+
+          cargarTrabajos(trabajosFiltrados); // Muestra los trabajos de la categoría
+      });
+  });
+});
