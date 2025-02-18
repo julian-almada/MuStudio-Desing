@@ -31,9 +31,26 @@
 
 
     <div class="trabajos-container">
-        <h2>Proyectos</h2>
         <div id="contenedor-trabajos" class="trabajos">
             <!-- Los trabajos se generarán aquí con JavaScript -->
+        </div>
+        <div class="modal oculto" id="modal-trabajo">
+            <div class="modal-descripcion-contenedor">
+                <h2 id="modal-titulo"></h2> <!-- Aquí se mostrará el título -->
+                <p id="modal-descripcion"></p> <!-- Aquí se mostrará la descripción -->
+            </div>
+            
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <div class="imagen-principal-container">
+                    <img id="imagen-principal" src="" alt="Trabajo seleccionado">
+                </div>
+                <div class="miniaturas-container">
+                    <img class="miniatura" src="" alt="">
+                    <img class="miniatura" src="" alt="">
+                    <img class="miniatura" src="" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
