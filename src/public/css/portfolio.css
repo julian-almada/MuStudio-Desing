@@ -337,3 +337,20 @@
 .miniatura:hover {
     border: 2px solid #333;
 }
+
+.modal-descripcion-contenedor {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding: 8rem;
+}
+
+.modal-descripcion-contenedor h2{
+    font-size: 35px;
+    color: #ebe6e6;
+}
+
+.modal-descripcion-contenedor p {
+    font-size: 25px;
+    color: #ebe6e6;
+}
