@@ -3,9 +3,9 @@
       "id": 1,
       "imagen": "/images/chino.jpeg",
       "imagenes": [
-        "/images/trabajo1_1.jpeg",
-        "/images/trabajo1_2.jpeg",
-        "/images/trabajo1_3.jpeg"
+        "/images/chino_1.jpeg",
+        "/images/chino_2.jpeg",
+        "/images/chino_3.jpeg"
         ],
       "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
       "titulo": "Trabajo 1",
@@ -14,8 +14,11 @@
     {
         "id": 2,
         "imagen": "/images/cosa.jpeg",
-        "imagen2": "/images/cosa.jpeg",
-        "imagen3": "/images/cosa.jpeg",
+        "imagenes": [
+            "/images/cocina-marron.jpeg",
+            "/images/descarga2.jpeg",
+            "/images/descarga3.jpeg"
+            ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "cocina"
@@ -23,8 +26,11 @@
     {
         "id": 3,
         "imagen": "/images/descarga.jpeg",
-        "imagen2": "/images/descarga.jpeg",
-        "imagen3": "/images/descarga.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "cocina"
@@ -32,8 +38,11 @@
     {
         "id": 4,
         "imagen": "/images/descarga1.jpeg",
-        "imagen2": "/images/descarga1.jpeg",
-        "imagen3": "/images/descarga1.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "cocina"
@@ -41,8 +50,11 @@
     {
         "id": 5,
         "imagen": "/images/descarga6.jpeg",
-        "imagen2": "/images/descarga6.jpeg",
-        "imagen3": "/images/descarga6.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "dormitorio"
@@ -50,8 +62,11 @@
     {
         "id": 6,
         "imagen": "/images/descarga5.jpeg",
-        "imagen2": "/images/descarga5.jpeg",
-        "imagen3": "/images/descarga5.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "dormitorio"
@@ -59,8 +74,11 @@
     {
         "id": 7,
         "imagen": "/images/descarga4.jpeg",
-        "imagen2": "/images/descarga4.jpeg",
-        "imagen3": "/images/descarga4.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "dormitorio"
@@ -68,8 +86,11 @@
     {
         "id": 8,
         "imagen": "/images/cama.jpeg",
-        "imagen2": "/images/cama.jpeg",
-        "imagen3": "/images/cama.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "dormitorio"
@@ -77,8 +98,11 @@
     {
         "id": 9,
         "imagen": "/images/02.jpeg",
-        "imagen2": "/images/02.jpeg",
-        "imagen3": "/images/02.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "baño"
@@ -86,8 +110,11 @@
     {
         "id": 10,
         "imagen": "/images/03.jpeg",
-        "imagen2": "/images/03.jpeg",
-        "imagen3": "/images/03.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "baño"
@@ -95,8 +122,11 @@
     {
         "id": 11,
         "imagen": "/images/baño.jpeg",
-        "imagen2": "/images/baño.jpeg",
-        "imagen3": "/images/baño.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "baño"
@@ -104,8 +134,11 @@
     {
         "id": 12,
         "imagen": "/images/01.jpeg",
-        "imagen2": "/images/01.jpeg",
-        "imagen3": "/images/01.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "baño"
@@ -113,8 +146,11 @@
     {
         "id": 13,
         "imagen": "/images/07.jpeg",
-        "imagen2": "/images/07.jpeg",
-        "imagen3": "/images/07.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "living"
@@ -122,8 +158,11 @@
     {
         "id": 14,
         "imagen": "/images/09.jpeg",
-        "imagen2": "/images/09.jpeg",
-        "imagen3": "/images/09.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "living"
@@ -131,8 +170,11 @@
     {
         "id": 15,
         "imagen": "/images/descarga8.jpeg",
-        "imagen2": "/images/descarga8.jpeg",
-        "imagen3": "/images/descarga8.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "living"
@@ -140,8 +182,11 @@
     {
         "id": 16,
         "imagen": "/images/wall.jpeg",
-        "imagen2": "/images/wall.jpeg",
-        "imagen3": "/images/wall.jpeg",
+        "imagenes": [
+        "/images/cocina-marron.jpeg",
+        "/images/descarga2.jpeg",
+        "/images/descarga3.jpeg"
+        ],
         "descripcion": "Descripción del trabajo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis aspernatur, eius velit sed laborum consequatur, molestiae assumenda optio nobis ad, id quas recusandae! Corporis doloribus maxime quidem itaque aliquid?",
         "titulo": "TRABAJO",
         "categoria": "living"

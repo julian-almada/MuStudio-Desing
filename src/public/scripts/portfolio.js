@@ -68,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTitulo = document.querySelector("#modal-titulo");
     const modalDescripcion = document.querySelector("#modal-descripcion");
 
+    
+
     document.addEventListener("click", (e) => {
         if (e.target.classList.contains("ver-trabajo")) {
             const trabajo = e.target.closest(".trabajos-de-categoria");
@@ -85,8 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             miniaturas.forEach((miniatura, index) => {
-                miniatura.src = imagenSrc.replace(".jpeg", `_${index + 1}.jpeg`);
-            });
+              miniatura.src = imagenSrc.replace(".jpeg", `_${index + 1}.jpeg`);
+          });
 
             modal.classList.add("mostrar");
         }
@@ -94,10 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Cambiar imagen principal al hacer clic en miniaturas
     miniaturas.forEach((miniatura) => {
-        miniatura.addEventListener("click", (e) => {
-            imagenPrincipal.src = e.target.src;
-        });
-    });
+      miniatura.addEventListener("click", (e) => {
+          let imagenTemp = imagenPrincipal.src; // Guarda la imagen principal actual
+          imagenPrincipal.src = e.target.src;  // Asigna la miniatura como imagen principal
+          e.target.src = imagenTemp;  // La miniatura ahora muestra la imagen principal anterior
+      });
+  });
 
     // Cerrar modal
     botonCerrar.addEventListener("click", () => {
