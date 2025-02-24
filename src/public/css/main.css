@@ -90,30 +90,4 @@ footer .info {
 }
 
 
-@media (max-width: 768px) {
-    header .navbar {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        display: none;
-    }
 
-    header .navbar a {
-        display: block;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .menu-icon {
-        display: block;
-        font-size: 3rem;
-        cursor: pointer;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-}

@@ -380,6 +380,7 @@
 .modal-descripcion-contenedor h2{
     font-size: 35px;
     color: #ebe6e6;
+    margin-bottom: 2rem;
 }
 
 .modal-descripcion-contenedor p {

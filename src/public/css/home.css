@@ -79,3 +79,63 @@
 .inicio .descripcion-inicio p {
     font-size: 20px;
 }
+
+@media (max-width:768px) {
+    .inicio {
+        margin-top: 3rem;
+        padding-top: 15rem;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .icon {
+        height: 100%;
+        width: 95%;
+    }
+
+    #icon_fondo {
+        width: 100%;
+        opacity: 0.7;
+        background-size: cover;
+    }
+
+
+    .texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 760px;
+        padding: 0;
+    }
+
+    .texto h1 {
+        display: flex;
+        width: 700px;
+        max-width: 760px;
+        font-size: 80px;
+        top: 0;
+    }
+
+    .texto h2 {
+        display: flex;
+        width: 700px;
+        max-width: 760px;
+        font-size: 60px;
+        top: 0;
+    }
+
+    .inicio .descripcion-inicio {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: #aaaaaa;
+        width: 100vw;
+        padding: 2rem 5rem;
+    }
+}

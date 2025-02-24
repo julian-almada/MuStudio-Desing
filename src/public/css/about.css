@@ -153,3 +153,46 @@
 .about .about-card p {
     font-size: 20px;
 }
+
+@media (max-width:768px){
+    .acerca_de {
+        padding-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .acerca_de .grande {
+        margin-top: 0rem;
+    }
+    
+    .acerca_de .grande .banner .icon {
+        margin-top: 30rem;
+        object-fit: cover;
+        height: 100%;
+    }
+    .acerca_de .grande .banner .icon img {
+       height: 50%;
+       width: auto;
+       object-fit: cover;
+    }
+    
+    .acerca_de .grande .banner .icon #icon_fondo {
+        margin-top: -50rem;
+    }
+    
+    .acerca_de .grande .banner .texto {
+        display: flex;
+        width: 70%;
+        position: relative;
+        padding-bottom: 0;
+        z-index: 10;
+        text-align: center;
+        top: 8rem;
+    }
+    
+    .acerca_de .grande .banner .texto h2 {
+        font-size: 65px;
+    }
+    
+}

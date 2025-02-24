@@ -30,6 +30,7 @@ header .imagen_header {
 header .navbar {
     display: flex;
 }
+
  header .navbar a {
     font-size: 2rem;
     margin-left: 2.5rem;
@@ -40,3 +41,60 @@ header .navbar {
  header .navbar a:hover {
     transform: scale(1.1);
  }
+
+ header input{
+    display: none;
+ }
+
+ header label {
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+ }
+
+
+ @media (max-width:768px) {
+    header {
+        padding: .5rem 8%;
+    }
+   header label {
+       visibility: visible;
+       opacity: 1;
+   }
+
+   header .navbar {
+       position: absolute;
+       top: 100%;
+       right: 0;
+       width: 60%;
+       background: #aaaaaaa1;
+       backdrop-filter: blur(8px);
+       -webkit-backdrop-filter: blur(10px);
+       flex-direction: column;
+       padding: 1rem 2rem;
+       border-top: .1rem black;
+       transform-origin: top;
+       transform: scaleY(0);
+       transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+       gap: 4rem;
+       align-items: center;
+      border-radius: 0 0 0 25px;
+      box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+   }
+
+   header .navbar a {
+      font-size: 4rem;
+   }
+
+   header input:checked ~ .navbar {
+       transform: scaleY(1);
+       opacity: 1;
+   }
+
+   header input:checked ~ label::before {
+       content: '\f00d';
+   }
+}
+
